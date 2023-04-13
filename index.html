@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet" />
+
+    <script src="./script.js" defer></script>
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <form id="date-form">
+        <section>
+          <div>
+            <h1>Day</h1>
+            <input type="number" id="day-input" autocomplete="off" placeholder="DD" />
+            <span id="err" class="day"></span>
+          </div>
+          <div>
+            <h1>Month</h1>
+            <input type="number" id="month-input" autocomplete="off" placeholder="MM" />
+            <span id="err" class="month"></span>
+          </div>
+          <div>
+            <h1>Year</h1>
+            <input type="number" id="year-input" autocomplete="off" placeholder="YYYY" />
+            <span id="err" class="year"></span>
+          </div>
+        </section>
+        <section>
+          <hr />
+          <button class="arrow" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+              <g fill="none" stroke="#FFF" stroke-width="2">
+                <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+              </g>
+            </svg>
+          </button>
+        </section>
+      </form>
+      <section>
+        <h1><span id="years">--</span>&nbsp;years</h1>
+        <h1><span id="months">--</span>&nbsp;months</h1>
+        <h1><span id="days">--</span>&nbsp;days</h1>
+      </section>
+    </main>
+  </body>
+</html>
